@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/house-utilities",
+      "handler": "house-utilities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/house-utilities/count",
+      "handler": "house-utilities.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/house-utilities/:id",
+      "handler": "house-utilities.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/house-utilities",
+      "handler": "house-utilities.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/house-utilities/:id",
+      "handler": "house-utilities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/house-utilities/:id",
+      "handler": "house-utilities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

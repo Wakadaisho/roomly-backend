@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/house-reviews",
+      "handler": "house-reviews.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/house-reviews/count",
+      "handler": "house-reviews.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/house-reviews/:id",
+      "handler": "house-reviews.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/house-reviews",
+      "handler": "house-reviews.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/house-reviews/:id",
+      "handler": "house-reviews.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/house-reviews/:id",
+      "handler": "house-reviews.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

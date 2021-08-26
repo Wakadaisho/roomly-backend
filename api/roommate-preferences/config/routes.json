@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/roommate-preferences",
+      "handler": "roommate-preferences.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roommate-preferences/count",
+      "handler": "roommate-preferences.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roommate-preferences/:id",
+      "handler": "roommate-preferences.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/roommate-preferences",
+      "handler": "roommate-preferences.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/roommate-preferences/:id",
+      "handler": "roommate-preferences.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/roommate-preferences/:id",
+      "handler": "roommate-preferences.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

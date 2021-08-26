@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "house_amenities",
+  "info": {
+    "name": "House Amenities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roommate_preferences",
+  "info": {
+    "name": "Roommate Preferences"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

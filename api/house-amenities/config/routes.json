@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/house-amenities",
+      "handler": "house-amenities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/house-amenities/count",
+      "handler": "house-amenities.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/house-amenities/:id",
+      "handler": "house-amenities.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/house-amenities",
+      "handler": "house-amenities.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/house-amenities/:id",
+      "handler": "house-amenities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/house-amenities/:id",
+      "handler": "house-amenities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

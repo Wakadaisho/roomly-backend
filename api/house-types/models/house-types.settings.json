@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "house_types",
+  "info": {
+    "name": "House Types"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "houses": {
+      "via": "house_type",
+      "collection": "houses"
+    }
+  }
+}

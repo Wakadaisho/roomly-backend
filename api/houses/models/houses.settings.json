@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "houses",
+  "info": {
+    "name": "houses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "location": {
+      "type": "json",
+      "required": true
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false,
+      "private": false
+    },
+    "visible": {
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "house_features": {
+      "via": "houses",
+      "collection": "house-features",
+      "dominant": true
+    },
+    "house_type": {
+      "model": "house-types",
+      "via": "houses"
+    },
+    "location_name": {
+      "type": "string",
+      "required": true
+    },
+    "cost": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    }
+  }
+}

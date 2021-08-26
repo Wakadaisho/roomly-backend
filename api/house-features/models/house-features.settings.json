@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "house_features",
+  "info": {
+    "name": "House Features",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "houses": {
+      "via": "house_features",
+      "collection": "houses"
+    },
+    "cost": {
+      "type": "biginteger"
+    }
+  }
+}
